@@ -1,0 +1,113 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  padding: 1rem;
+}
+
+header {
+  background: #222;
+  color: #fff;
+  padding: 1rem;
+  position: relative;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 40px;
+  margin-right: 10px;
+}
+
+#menu-toggle {
+  display: none;
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  background: none;
+  font-size: 1.5rem;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+nav ul {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  margin-top: 1rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+main {
+  padding: 1rem 0;
+}
+
+.about-me {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.aboutme,
+.student-photo {
+  background: #ddd;
+  padding: 1rem;
+  flex: 1;
+}
+
+.student-photo img {
+  width: 20%;
+  height: auto;
+}
+
+.courses {
+  margin-top: 2rem;
+  background: #eee;
+  padding: 1rem;
+}
+
+.filter-buttons {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.filter {
+  padding: 0.5rem 1rem;
+}
+
+.course-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.course {
+  background: #ccc;
+  padding: 0.5rem;
+}
+
+footer {
+  text-align: center;
+  margin-top: 2rem;
+  background: #ccc;
+  padding: 1rem;
+}
+
+footer .icons img {
+  width: 24px;
+  margin: 0 0.5rem;
+}
