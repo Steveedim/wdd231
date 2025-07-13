@@ -1,0 +1,74 @@
+[
+  {
+    "name": "Bright Tech Ltd.",
+    "address": "123 Innovation Drive, Lagos",
+    "phone": "+234-701-234-5678",
+    "website": "https://brighttech.ng",
+    "image": "brightech.png",
+    "membership": 3,
+    "description": "Innovative solutions for digital businesses."
+  },
+  {
+    "name": "Green Market",
+    "address": "45 Eco Road, Abuja",
+    "phone": "+234-802-987-6543",
+    "website": "https://greenmarket.com",
+    "image": "greenmarket.png",
+    "membership": 2,
+    "description": "Organic produce and eco-friendly products."
+  },
+  {
+    "name": "Tech Innovators",
+    "address": "789 Tech Park, Port Harcourt",
+    "phone": "+234-903-456-7890",
+    "website": "https://techinnovators.com",
+    "image": "techinnovation.png",
+    "membership": 1,
+    "description": "Leading the way in technology solutions."
+  },
+  {
+        "name": "Culinary Delights",
+        "address": "321 Food Street, Enugu",
+        "phone": "+234-704-321-0987",
+        "website": "https://culinarydelights.ng",
+        "image": "culinary.png",
+        "membership": 2,
+        "description": "Exquisite dining experiences and catering services."
+  },
+  {
+        "name": "Health First Clinic",
+        "address": "456 Wellness Avenue, Ibadan",
+        "phone": "+234-705-654-3210",
+        "website": "https://healthfirstclinic.com",
+        "image": "clinic.png",
+        "membership": 1,
+        "description": "Comprehensive healthcare services for the community."
+  },
+  {
+        "name": "EduTech Solutions",
+        "address": "789 Learning Lane, Kano",
+        "phone": "+234-706-123-4567",
+        "website": "https://edutechsolutions.ng",
+        "image": "edutech.png",
+        "membership": 3,
+        "description": "Innovative educational technology solutions."
+  },
+  {
+       "name": "Fashion Hub",
+       "address": "123 Style Street, Abuja",
+       "phone": "+234-707-234-5678",
+       "website": "https://fashionhub.com",
+       "image": "fashionhub.png",
+       "membership": 2,
+            "description": "Trendy fashion and lifestyle products."
+  },
+  {
+        "name": "Green Energy Solutions",
+        "address": "456 Solar Road, Lagos",
+        "phone": "+234-708-345-6789",
+        "website": "https://greenenergysolutions.ng",
+        "image": "greenenergy.png",
+        "membership": 1,
+        "description": "Sustainable energy solutions for a greener future."
+  }
+]

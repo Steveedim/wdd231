@@ -1,0 +1,78 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header, footer {
+  background: #004080;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+nav ul li a.active {
+  text-decoration: underline;
+}
+
+.viewbutton {
+  text-align: center;
+  margin: 1rem;
+}
+
+#directory.gridView {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+}
+
+#directory.listView {
+  display: block;
+  padding: 1rem;
+}
+
+.card {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  background-color: #f9f9f9;
+}
+
+.card img {
+  max-width: 100%;
+  height: auto;
+}
+
+#navMenu {
+  display: none;
+  flex-direction: column;
+  background-color: #004080;
+  padding: 1rem;
+}
+
+#navMenu.show {
+  display: flex;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  display: inline-block;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+  background-color: white;
+  color: #004080;
+  border-radius: 5px;
+}
+
