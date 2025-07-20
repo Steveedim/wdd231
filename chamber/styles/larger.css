@@ -1,0 +1,75 @@
+@media screen and (min-width: 768px) {
+  nav {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #menu-toggle {
+    display: none;
+  }
+
+  #main-nav {
+    display: flex !important;
+    flex-direction: row;
+    gap: 2rem;
+  }
+
+  #main-nav li {
+    margin: 0;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+
+  nav ul {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  nav a {
+    padding: 1rem 1.5rem;
+  }
+
+  .hero {
+    position: relative;
+    height: 400px;
+  }
+
+  .hero img {
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .cta {
+    font-size: 1.25rem;
+    padding: 1rem 2rem;
+  }
+
+  .events-weather-wrapper {
+    display: flex;
+    gap: 2rem;
+  }
+
+  .events,
+  .weather {
+    flex: 1;
+  }
+
+  .spotlight-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .spotlight-card {
+    transition: transform 0.3s;
+  }
+
+  .spotlight-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  footer {
+    font-size: 1rem;
+  }
+}
