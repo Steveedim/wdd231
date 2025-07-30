@@ -13,8 +13,7 @@ body {
 header {
   background: #222;
   color: #fff;
-  padding: 1rem;
-  position: relative;
+  padding: 10px 0;
 }
 
 .logo {
@@ -41,7 +40,9 @@ header {
 
 nav ul {
   display: flex;
-  gap: 1rem;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
   list-style: none;
   margin-top: 1rem;
 }
@@ -49,27 +50,41 @@ nav ul {
 nav a {
   color: white;
   text-decoration: none;
+  font-weight: bold;
 }
 
-main {
-  padding: 1rem 0;
+nav a:hover {
+  text-decoration: underline;
+  color: #007bff;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  padding: 20px;
+}
+
+.card {
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
 .about-me {
+  height: auto;
   display: flex;
   gap: 1rem;
   flex-wrap: wrap;
 }
 
-.aboutme,
-.student-photo {
+.student-card {
   background: #ddd;
   padding: 1rem;
-  flex: 1;
 }
 
-.student-photo img {
-  width: 20%;
+.student-card img {
   height: auto;
 }
 
@@ -79,10 +94,24 @@ main {
   padding: 1rem;
 }
 
-.filter-buttons {
+
+#courseFilters {
   display: flex;
+  justify-content: space-around;
   gap: 0.5rem;
-  margin-bottom: 1rem;
+}
+
+#courseFilters button {
+  padding: 0.5rem 1rem;
+  color: black;
+  background-color: #aa5555;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#courseFilters button:hover {
+  background-color: #707070;
 }
 
 .filter {

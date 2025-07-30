@@ -31,3 +31,4 @@ document.getElementById('cseBtn').addEventListener('click', () => {
 });
 
 renderCourses(courses);
+

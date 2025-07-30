@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Join Our Chamber</title>
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/join.css">
+  <link rel="stylesheet" href="styles/larger.css" media="(min-width: 768px)">
+  <script defer src="scripts/join.js"></script>
+  <script src="scripts/spotlight.js" defer></script>
+  <script src="scripts/directory.js" defer></script>
+  <script src="scripts/thankyou.js" defer></script>
+</head>
+<body>
+  <header>
+    <header>
+        <div class="branding">
+            <img src="images/icon.jpg" alt="logo" height="30" width="50">
+        </div>
+        <h1>Thank you</h1>
+        <nav aria-label="Main Navigation">
+            <button id="menu-toggle" aria-label="Toggle Navigation">☰</button>
+            <ul id="main-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+  </header>
+
+  <main>
+    <h2>Application Submitted</h2>
+    <p>Thank you for joining the chamber. Here is what we received:</p>
+    <ul>
+      <li><strong>First Name:</strong> <span id="fname"></span></li>
+      <li><strong>Last Name:</strong> <span id="lname"></span></li>
+      <li><strong>Email:</strong> <span id="email"></span></li>
+      <li><strong>Phone:</strong> <span id="phone"></span></li>
+      <li><strong>Business Name:</strong> <span id="orgname"></span></li>
+      <li><strong>Submitted At:</strong> <span id="timestamp"></span></li>
+    </ul>
+  </main>
+
+  <footer>
+       <p>&copy; <span id="currentyear"></span> 🌺Stephen Asuquo Bassey Edim. Nigeria🌺</p>
+      <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

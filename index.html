@@ -11,7 +11,7 @@
     <meta property="og:url" content="https://https://steveedim.github.io/wdd231/">
     <title>WDD231 - Homepage</title>
     <link rel="stylesheet" href="styles/small.css">
-    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/large.css" media="screen and (min-width: 800px)">
     <link rel="stylesheet" href="styles/normalize.css">
     <script src="scripts/date.js" defer></script>
     <script src="scripts/course.js" defer></script>
@@ -27,22 +27,24 @@
     <nav id="navMenu">
         <a href="index.html">Home</a>
         <a href="#">Chamber Project</a>
-        <a href="#">Final Final Project</a>
+        <a href="#">Final Project</a>
+        <a href="#">LinkedIn</a>
     </nav>
     </header>
     <main>
         <h1>Home</h1>
-        <section>
+        <div class="grid-container">
+        <section class="student-card">
             <h2>About Me</h2>
             <p>My name is Stephen Edim, and I am a web development student.</p>
+            <img src="images/student.jpg" alt="student photo">
         </section>
-        <section>
-            <div class="student-photo">
-                <h2>Student Photo</h2>
-                <img src="images/student.jpg" alt="student photo">
-            </div>
+        <section class="location-card">
+            <h2>Calabar, Nigeria</h2>
+            <img src="images/ekpe.jpeg" alt="calabar culture">
+            <p>Ekpe Masqurade</p>
         </section>
-        <section class="courses">
+        <section class="courses card">
             <h2>Web Certificate Courses</h2>
             <div id="courseFilters">
                 <button id="allBtn">All Courses</button>
@@ -52,6 +54,7 @@
             <div id="coursesContainer"></div>
             <p>Total Credits: <span id="totalCredits">0</span></p>
         </section>
+        </div>
     </main>
     <footer>
         <p>&copy; <span id="currentYear"></span>🌺Stephen Edim, Nigeria 🇳🇬🌺</p>

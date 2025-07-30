@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Join Our Chamber</title>
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/join.css">
+  <link rel="stylesheet" href="styles/larger.css" media="(min-width: 768px)">
+  <script defer src="scripts/join.js"></script>
+  <script src="scripts/spotlight.js" defer></script>
+  <script src="scripts/directory.js" defer></script>
+</head>
+<body>
+  <header>
+        
+        <nav aria-label="Main Navigation">
+            <button id="menu-toggle" aria-label="Toggle Navigation">☰</button>
+            <ul id="main-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+  <main>
+    <form action="thankyou.html" method="get" id="joinForm">
+      <label>
+        First Name:
+        <input type="text" name="fname" title="First Name" required autocomplete="given-name" />
+      </label>
+
+      <label>
+        Last Name:
+        <input type="text" name="lname" title="Last Name" required autocomplete="family-name" />
+      </label>
+
+      <label>
+        Organization Title:
+        <input type="text" name="orgtitle" title="Your title in the organization" autocomplete="organization-title"
+          pattern="[A-Za-z\s\-]{7,}" />
+      </label>
+
+      <label>
+        Email:
+        <input type="email" name="email" title="Your email address" required autocomplete="email"
+          placeholder="example@email.com" />
+      </label>
+
+      <label>
+        Mobile Phone:
+        <input type="tel" name="phone" title="Mobile phone number" required autocomplete="tel" />
+      </label>
+
+      <label>
+        Business/Organization Name:
+        <input type="text" name="orgname" title="Business or organization name" required autocomplete="organization" />
+      </label>
+
+      <label>
+        Membership Level:
+        <select name="membership" title="Select membership level">
+          <option value="NP">NP Membership (Free)</option>
+          <option value="Bronze">Bronze Membership</option>
+          <option value="Silver">Silver Membership</option>
+          <option value="Gold">Gold Membership</option>
+        </select>
+      </label>
+
+      <label>
+        Business/Organization Description:
+        <textarea name="description" title="Description of your business or organization"></textarea>
+      </label>
+
+      <input type="hidden" id="timestamp" name="timestamp" />
+
+      <input type="submit" value="Submit Application" />
+    </form>
+
+    <section class="membership-cards">
+      <div class="card np" onclick="document.getElementById('npModal').showModal()">
+        <h3>NP Membership</h3>
+        <a href="#">More Info</a>
+      </div>
+      <div class="card bronze" onclick="document.getElementById('bronzeModal').showModal()">
+        <h3>Bronze Membership</h3>
+        <a href="#">More Info</a>
+      </div>
+      <div class="card silver" onclick="document.getElementById('silverModal').showModal()">
+        <h3>Silver Membership</h3>
+        <a href="#">More Info</a>
+      </div>
+      <div class="card gold" onclick="document.getElementById('goldModal').showModal()">
+        <h3>Gold Membership</h3>
+        <a href="#">More Info</a>
+      </div>
+    </section>
+
+    <dialog id="npModal"><p>No cost. Best for nonprofit orgs. Access to events & newsletter.</p><button onclick="this.parentElement.close()">Close</button></dialog>
+    <dialog id="bronzeModal"><p>Basic benefits including newsletter, events, and training discounts.</p><button onclick="this.parentElement.close()">Close</button></dialog>
+    <dialog id="silverModal"><p>Includes Bronze benefits + social media promo + limited homepage spotlight.</p><button onclick="this.parentElement.close()">Close</button></dialog>
+    <dialog id="goldModal"><p>All Silver benefits + premium spotlight ads, featured events, priority support.</p><button onclick="this.parentElement.close()">Close</button></dialog>
+
+  </main>
+
+  <footer>
+       <p>&copy; <span id="currentyear"></span> 🌺Stephen Asuquo Bassey Edim. Nigeria🌺</p>
+      <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
