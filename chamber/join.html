@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Join Our Chamber</title>
   <link rel="stylesheet" href="styles/normalize.css">
   <link rel="stylesheet" href="styles/join.css">
@@ -13,7 +13,6 @@
 </head>
 <body>
   <header>
-        
         <nav aria-label="Main Navigation">
             <button id="menu-toggle" aria-label="Toggle Navigation">☰</button>
             <ul id="main-nav">
@@ -29,34 +28,34 @@
     <form action="thankyou.html" method="get" id="joinForm">
       <label>
         First Name:
-        <input type="text" name="fname" title="First Name" required autocomplete="given-name" />
+        <input type="text" name="fname" title="First Name" required autocomplete="given-name">
       </label>
 
       <label>
         Last Name:
-        <input type="text" name="lname" title="Last Name" required autocomplete="family-name" />
+        <input type="text" name="lname" title="Last Name" required autocomplete="family-name">
       </label>
 
       <label>
         Organization Title:
         <input type="text" name="orgtitle" title="Your title in the organization" autocomplete="organization-title"
-          pattern="[A-Za-z\s\-]{7,}" />
+          placeholder="e.g. CEO, Founder" required>
       </label>
 
       <label>
         Email:
         <input type="email" name="email" title="Your email address" required autocomplete="email"
-          placeholder="example@email.com" />
+          placeholder="example@email.com">
       </label>
 
       <label>
         Mobile Phone:
-        <input type="tel" name="phone" title="Mobile phone number" required autocomplete="tel" />
+        <input type="tel" name="phone" title="Mobile phone number" required autocomplete="tel">
       </label>
 
       <label>
         Business/Organization Name:
-        <input type="text" name="orgname" title="Business or organization name" required autocomplete="organization" />
+        <input type="text" name="orgname" title="Business or organization name" required autocomplete="organization">
       </label>
 
       <label>
@@ -74,9 +73,9 @@
         <textarea name="description" title="Description of your business or organization"></textarea>
       </label>
 
-      <input type="hidden" id="timestamp" name="timestamp" />
+      <input type="hidden" id="timestamp" name="timestamp">
 
-      <input type="submit" value="Submit Application" />
+      <input type="submit" value="Submit Application">
     </form>
 
     <section class="membership-cards">
