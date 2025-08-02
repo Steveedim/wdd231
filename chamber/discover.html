@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/larger.css" media="(min-width: 768px)">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/discover.css">
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/spotlight.js" defer></script>
+    <script src="scripts/discover.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="branding">
+            <img src="images/icon.jpg" alt="logo" height="30" width="50">
+        </div>
+        <nav aria-label="Main Navigation">
+            <button id="menu-toggle" aria-label="Toggle Navigation">☰</button>
+            <ul id="main-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <aside id="visit-message" class="visit-info">
+        </aside>
+
+        <section class="grid-container" id="attractions">
+        </section>
+    </main>
+     <footer>
+       <p>&copy; <span id="currentyear"></span> 🌺Stephen Asuquo Bassey Edim. Nigeria🌺</p>
+      <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Lekki Conservation Centre",
+    "image": "images/conservativecenter.jpeg",
+    "address": "KM 19, Lekki-Epe Expressway, Lekki Peninsula, Lagos",
+    "description": "A large nature reserve with canopy walks, monkeys, and picnic spots."
+  },
+  {
+    "name": "Nike Art Gallery",
+    "image": "images/nike.jpeg",
+    "address": "No. 2, Elegushi Rd, Lekki Phase I, Lagos",
+    "description": "A vibrant art gallery showcasing Nigerian artists and crafts."
+  },
+  {
+    "name": "Lekki Market",
+    "image": "images/lekkimarket.jpeg",
+    "address": "Lekki Market, Lekki Peninsula, Lagos",
+    "description": "A bustling market known for its crafts, textiles, and local produce."
+  },
+  {
+        "name": "Elegushi Beach",
+        "image": "images/elegushi.jpeg",
+        "address": "Elegushi Beach Rd, Lekki Phase I, Lagos",
+        "description": "A popular beach destination with restaurants, bars, and nightlife."
+  },
+  {
+        "name": "Lekki Leisure Lake",
+        "image": "images/leisurelake.jpeg",
+        "address": "Lekki Leisure Lake Resort, Lekki Peninsula, Lagos",
+        "description": "A serene lake offering boat rides and water sports activities."
+  }
+]
