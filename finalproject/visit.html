@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover Naija, the ultimate guide to exploring Nigeria's rich culture and attractions.">
+    <meta name="author" content="Stephen Edim">
+    <title>Discover Naija</title>
+    <meta property="og:title" content="Discover Naija">
+    <meta property="og:description" content="Explore the beauty, culture, and heritage of Nigeria through curated travel spots, attractions, and experiences.">
+    <meta property="og:image" content="images/og-image.jpg">
+    <meta property="og:url" content="https://www.discovernaija.com">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/visit.css">
+    <link rel="stylesheet" href="styles/large.css" media="screen and (min-width: 768px)">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <script src="scripts/discovernaija.js" defer></script>
+</head>
+<body>
+<header>
+<nav class="navbar bg-success fixed-top">
+  <div class="container-fluid">
+    <div class="branding">
+        <img src="images/nigerlogo.jpeg" alt="logo" height="30" width="50">
+    </div>
+    <form class="d-flex mt-3" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+        <button class="btn btn-outline-tertiary" type="submit">Search</button>
+    </form>
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="destination.html">Destination</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="culture.html">Culture</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="visit.html">Places to Visit</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+</header>
+ <main>
+      <section class="hero">
+        <div>
+          <h1>Top places to visit — curated for you</h1>
+          <p>Beaches, cultural sites, nature escapes and guided tours. Choose a place and reserve your spot.</p>
+          <div class="quick-book">
+            <div class="search" role="search">
+              <input type="search" id="q" placeholder="Search places, e.g. 'beach'" aria-label="Search places">
+              <select id="category" aria-label="Category">
+                <option value="all">All categories</option>
+                <option value="beach">Beaches</option>
+                <option value="cultural">Cultural</option>
+                <option value="nature">Nature</option>
+              </select>
+            </div>
+            <div>
+              <button class="btn" id="openReservation">Quick Book</button>
+            </div>
+          </div>
+        </div>
+        <div class="reservation-panel" id="sidePanel">
+          <h3 style="margin:0 0 8px 0">Reserve a visit</h3>
+          <form id="reserveForm">
+            <div>
+              <label for="placeSelect">Place</label>
+              <select id="placeSelect" required>
+                <option value="Hidden" disabled selected>Select a place</option>
+                <option value="Lagos Beach">Lagos Beach - Coastal Relax</option>
+                <option value="Lekki Conservation">Lekki Conservation Centre</option>
+                <option value="Nike Art Gallery">Nike Art Gallery</option>
+                <option value="Obudu Mountain">Obudu Mountain Resort</option>
+                <option value="Four Point by Sheraton">Four Point by Sheraton</option>
+                <option value="Yangari National Park">Yangari National Park</option>
+                <option value="Zuma Rock">Zuma Rock</option>
+              </select>
+            </div>
+            <div>
+              <label for="date">Date</label>
+              <input id="date" type="date" required>
+            </div>
+            <div>
+              <label for="people">Visitors</label>
+              <input id="people" type="number" min="1" value="2" required>
+            </div>
+            <div>
+              <label for="name">Full name</label>
+              <input id="name" type="text" placeholder="Your name" required>
+            </div>
+            <div>
+              <label for="email">Email</label>
+              <input id="email" type="email" placeholder="you@example.com" required>
+            </div>
+            <div style="display:flex;gap:8px;justify-content:flex-end;margin-top:6px">
+              <button type="button" class="btn secondary" id="resetBtn">Reset</button>
+              <button type="submit" class="btn">Confirm</button>
+            </div>
+          </form>
+        </div>
+      </section>
+      <section aria-labelledby="placesHeading">
+        <h2 id="placesHeading" style="margin:8px 0;color:var(--muted);font-size:14px">Featured places</h2>
+        <div class="places" id="placesGrid">
+          <article class="card" data-category="beach">
+            <div class="thumb" style="background-image:url('https://i.pinimg.com/1200x/91/30/72/9130723b447d909c9b2986a2ad249df7.jpg');"></div>
+            <div class="meta">
+              <h3>Lagos Beach</h3>
+              <p>Golden sand and lively promenades — perfect for families and sunset walks.</p>
+              <div class="actions">
+                <button class="btn secondary" data-place="Lagos Beach">Details</button>
+                <button class="btn" data-book="Lagos Beach">Book</button>
+              </div>
+            </div>
+          </article>
+          <article class="card" data-category="nature">
+            <div class="thumb" style="background-image:url('https://lh7-rt.googleusercontent.com/docsz/AD_4nXd3fjlTDMGIxgMXw9SgYBpl0LUtLgdCXte6yT-GCPcVUrDSv3_6MouBJusquHIlVwklqtkkNSIjazUsO_gk4oeKh98Jb58dHIh1oRQzU-y5Aemy7_HpUr4I7Vb5xqHdpcafULFNGw?key=-oe_QZUH9J0Nm0nCbs8zVC6f');"></div>
+            <div class="meta">
+              <h3>Lekki Conservation Centre</h3>
+              <p>Walk the canopy bridge and meet local wildlife in a protected coastal reserve.</p>
+              <div class="actions">
+                <button class="btn secondary" data-place="Lekki Conservation">Details</button>
+                <button class="btn" data-book="Lekki Conservation">Book</button>
+              </div>
+            </div>
+          </article>
+          <article class="card" data-category="cultural">
+            <div class="thumb" style="background-image:url('https://nikeartfoundation.com/wp-content/uploads/2023/12/nike-art-gallery-lagos.jpg');"></div>
+            <div class="meta">
+              <h3>Nike Art Gallery</h3>
+              <p>A huge private collection of Nigerian contemporary art and crafts — great for culture lovers.</p>
+              <div class="actions">
+                <button class="btn secondary" data-place="Nike Art Gallery">Details</button>
+                <button class="btn" data-book="Nike Art Gallery">Book</button>
+              </div>
+            </div>
+          </article>
+          <article class="card" data-category="nature">
+            <div class="thumb" style="background-image:url('https://www.mgkente.com/cdn/shop/articles/IMG_9272.jpg?v=1715942265');"></div>
+            <div class="meta">
+              <h3>Obudu Mountain Resort</h3>
+              <p>Cool mountain air, cable cars and scenic viewpoints — perfect getaway from the heat.</p>
+              <div class="actions">
+                <button class="btn secondary" data-place="Obudu Mountain">Details</button>
+                <button class="btn" data-book="Obudu Mountain">Book</button>
+              </div>
+            </div>
+          </article>
+          <article class="card" data-category="nature">
+            <div class="thumb" style="background-image:url('https://media.licdn.com/dms/image/v2/C4D22AQEC-1wx6BB5HQ/feedshare-shrink_800/feedshare-shrink_800/0/1679503079259?e=2147483647&v=beta&t=ncZCfLlRB09xwTMkbM1f72neITOTIfoaRvyjBQfE1Qc');"></div>
+            <div class="meta">
+              <h3>Four Point by Sheraton</h3>
+              <p>Luxury hotel with stunning views, fine dining, and a world-class spa.</p>
+              <div class="actions">
+                <button class="btn secondary" data-place="Four Point Sheraton">Details</button>
+                <button class="btn" data-book="Four Point Sheraton">Book</button>
+              </div>
+            </div>
+          </article>
+          <article class="card" data-category="nature">
+            <div class="thumb" style="background-image:url('https://oiroegbu.com/wp-content/uploads/2020/06/images-21614151279907704393..jpg?w=750');"></div>
+            <div class="meta">
+              <h3>Yangari National Park</h3>
+              <p>A beautiful national park known for its diverse wildlife and stunning landscapes.</p>
+              <div class="actions">
+                <button class="btn secondary" data-place="Yangari National Park">Details</button>
+                <button class="btn" data-book="Yangari National Park">Book</button>
+              </div>
+            </div>
+          </article>
+          <article class="card" data-category="nature">
+            <div class="thumb" style="background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRk9IV8-4Tc1jsZM2QSjK89cpFY_0pmivF68g&s');"></div>
+            <div class="meta">
+              <h3>Zuma Rock</h3>
+              <p>A beautiful national park known for its diverse wildlife and stunning landscapes.</p>
+              <div class="actions">
+                <button class="btn secondary" data-place="Zuma Rock">Details</button>
+                <button class="btn" data-book="Zuma Rock">Book</button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+</body>
+</html>

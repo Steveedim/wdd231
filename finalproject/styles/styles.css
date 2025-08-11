@@ -1,0 +1,80 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap');
+
+/* General Styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #F9F7F1; /* Ivory */
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background-color: #2E7D32; /* Forest Green */
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+header h1 {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#menu-toggle {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  display: block;
+  cursor: pointer;
+}
+
+#main-nav {
+  list-style: none;
+  padding: 0;
+  display: none;
+  flex-direction: column;
+  width: 100%;
+}
+
+#main-nav li {
+  margin: 0.5rem 0;
+}
+
+#main-nav li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5rem 0;
+  display: block;
+}
+
+#hero {
+  background: url('https://i.pinimg.com/1200x/9e/dd/87/9edd879df3e280911b5fb25d2e949436.jpg') no-repeat center center/cover;
+  padding: 4rem 1rem;
+  color: white;
+  text-align: center;
+  height: 30vh;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+footer {
+  background-color: #07770d;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
